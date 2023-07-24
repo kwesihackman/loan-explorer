@@ -1,4 +1,5 @@
 export interface ILoanProduct {
+  id:string
   bankName: string;
   logo: string;
   loanProductName: string;
