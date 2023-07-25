@@ -84,16 +84,16 @@ const LoanDetails = ({ loanProduct, showProductName=false }: Props) => {
         <div className="mt-4">
           <h4 className=" font-semibold text-slate-400">Requirements</h4>
           <ul className="list-disc">
-            {eligibilityRequirements.map((item) => (
-              <li className="text-sm ml-4">{item}</li>
+            {eligibilityRequirements.map((item, index) => (
+              <li key={index} className="text-sm ml-4">{item}</li>
             ))}
           </ul>
         </div>
         <div className="mt-4">
           <h4 className=" font-semibold text-slate-400">Collateral Options</h4>
           <ul className="list-disc">
-            {collateralRequired.map((item) => (
-              <li className="text-sm ml-4">{item}</li>
+            {collateralRequired.map((item, index) => (
+              <li key={index} className="text-sm ml-4">{item}</li>
             ))}
           </ul>
         </div>

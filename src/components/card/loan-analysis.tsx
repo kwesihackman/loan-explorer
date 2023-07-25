@@ -13,8 +13,8 @@ const LoanAnalysis = ({loanProductOne, loanProductTwo}: Props) => {
     <Fragment>
       <h3 className=" text-xl text-slate-700 font-semibold mb-2">Our Analysis</h3>
       <ul className="list-disc list-inside my-4">
-        {analysis.map((item) => (
-          <li className="text-sm ml-4">{item}</li>
+        {analysis.map((item, index) => (
+          <li key={index} className="text-sm ml-4">{item}</li>
         ))}
       </ul>
     </Fragment>
