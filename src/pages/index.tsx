@@ -1,10 +1,8 @@
-import { Heading } from "@chakra-ui/react";
 import Hero from "@components/hero";
 import ProductList from "@components/products";
 import SearchBox from "@components/search";
-import { Fragment, useState } from "react";
+import {  useState } from "react";
 import { useLoanProductsQuery } from "src/hooks/useFetchProducts";
-import { sampleLoanProducts } from "src/utils/Data";
 
 
 export default function Page() {
