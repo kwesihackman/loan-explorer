@@ -11,6 +11,7 @@ import {
   ModalBody,
 } from "@chakra-ui/react";
 import CompareProducts from "@components/card/compare-products";
+import LoanAnalysis from "@components/card/loan-analysis";
 
 interface ProductListProps {
   loanProducts: ILoanProduct[];
@@ -66,6 +67,10 @@ const ProductList: FC<ProductListProps> = ({ loanProducts }) => {
             <CompareProducts
               loanProductLeft={selectedProducts[0]}
               loanProductRight={selectedProducts[1]}
+            />
+            <LoanAnalysis
+              loanProductOne={selectedProducts[0]}
+              loanProductTwo={selectedProducts[1]}
             />
           </ModalBody>
         </ModalContent>
