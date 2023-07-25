@@ -12,27 +12,32 @@ import {
   ModalCloseButton,
   ModalBody,
 } from "@chakra-ui/react";
+import LoanDetails from "./loan-details";
 
 interface BankCardProps {
   loanProduct: ILoanProduct;
+  selected: boolean;
+  onSelect: (product: ILoanProduct) => void;
+  onUnselect: (productId: string) => void;
 }
 
-const BankCard: FC<BankCardProps> = ({ loanProduct }) => {
-  const {isOpen, onClose, onOpen} = useDisclosure()
-  const {
-    logo,
-    loanAmountRange,
-    bankName,
-    interestRate,
-    loanTerm,
-    loanProductName,
-    downPayment,
-    fees,
-    eligibilityRequirements,
-    collateralRequired,
-    loanDisbursementTime,
-    monthlyPayment
-  } = loanProduct;
+const BankCard: FC<BankCardProps> = ({
+  loanProduct,
+  selected,
+  onSelect,
+  onUnselect,
+}) => {
+  const { isOpen, onClose, onOpen } = useDisclosure();
+  const { logo, loanAmountRange, bankName, interestRate, loanProductName } =
+    loanProduct;
+
+    const handleButtonClick = () => {
+      if (selected) {
+        onUnselect(loanProduct.id);
+      } else {
+        onSelect(loanProduct);
+      }
+    };
   return (
     <Fragment>
       <div className="border rounded  max-w-xs">
@@ -44,7 +49,9 @@ const BankCard: FC<BankCardProps> = ({ loanProduct }) => {
           />
         </div>
         <div className="p-4 m-2">
-          <h3 className="text-xl mb-2 text-white font-semibold">{loanProductName}</h3>
+          <h3 className="text-xl mb-2 text-white font-semibold">
+            {loanProductName}
+          </h3>
           <p className="mb-2 text-sm text-white">
             <Label label="Bank" />
             {bankName}
@@ -57,14 +64,24 @@ const BankCard: FC<BankCardProps> = ({ loanProduct }) => {
             <Label label="Loan Amount" />
             GHS {loanAmountRange.min} - {loanAmountRange.max}
           </p>
-          <p className="pt-4 text-cyan-300 underline underline-offset-4 text-right">
-            <button
-              onClick={onOpen}
-              className="text-cyan-300 bg-transparent px-4 py-2 underline "
-            >
-              See more details
-            </button>
-          </p>
+          <div className="flex flex-row justify-between">
+            <p className="pt-4 text-cyan-500  text-right">
+              <button
+                onClick={handleButtonClick}
+                className="text-cyan-500 bg-transparent px-4 py-2  "
+              >
+                {selected ? "Unselect" : "Compare"}
+              </button>
+            </p>
+            <p className="pt-4 text-cyan-300 underline underline-offset-4 text-right">
+              <button
+                onClick={onOpen}
+                className="text-cyan-300 bg-transparent px-4 py-2 underline "
+              >
+                See more
+              </button>
+            </p>
+          </div>
         </div>
       </div>
       <Modal isOpen={isOpen} onClose={onClose}>
@@ -79,68 +96,7 @@ const BankCard: FC<BankCardProps> = ({ loanProduct }) => {
           </ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <div className="">
-              <div className=" bg-slate-50 min-w-full p-4">
-                <img
-                  src={logo}
-                  alt={bankName + " logo"}
-                  className="  h-20 mx-auto mb-4 object-fill"
-                />
-              </div>
-              <div className="p-4 m-2">
-                <p className="mb-2 text-sm ">
-                  <Label label="Bank" />
-                  {bankName}
-                </p>
-
-                <p className="text-sm mb-2">
-                  <Label label="Loan Amount" />
-                  GHS {loanAmountRange.min} - {loanAmountRange.max}
-                </p>
-                <p className="mb-2 text-sm ">
-                  <Label label="Down Payment" />
-                  {`GHS ${downPayment}`}
-                </p>
-                <p className="mb-2 text-sm ">
-                  <Label label="Fees" />
-                  {`GHS ${fees.originationFee}`}
-                </p>
-                <div className=" flex flex-row space-x-7 ">
-                  <p className="mb-2 text-sm ">
-                    <Label label="Interest Rate" />
-                    {interestRate}%
-                  </p>
-                  <p className="mb-2 text-sm ">
-                    <Label label="Loan Term" />
-                    {loanTerm} months
-                  </p>
-                </div>
-                <p className="mb-2 text-sm ">
-                  <Label label="Disbursement Period" />
-                  {loanDisbursementTime}
-                </p>
-                <div className="mt-4">
-                  <h4 className=" font-semibold text-slate-400">
-                    Requirements
-                  </h4>
-                  <ul className="list-disc">
-                    {eligibilityRequirements.map((item) => (
-                      <li className="text-sm ml-4">{item}</li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="mt-4">
-                  <h4 className=" font-semibold text-slate-400">
-                    Collateral Options
-                  </h4>
-                  <ul className="list-disc">
-                    {collateralRequired.map((item) => (
-                      <li className="text-sm ml-4">{item}</li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </div>
+            <LoanDetails loanProduct={loanProduct} />
           </ModalBody>
         </ModalContent>
       </Modal>
