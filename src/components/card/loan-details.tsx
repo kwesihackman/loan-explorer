@@ -21,7 +21,10 @@ const LoanDetails = ({ loanProduct, showProductName=false }: Props) => {
     collateralRequired,
     loanDisbursementTime,
     monthlyPayment,
-    apr
+    apr,
+    contact,
+    location
+    
   } = loanProduct;
   return (
     <div className="">
@@ -31,6 +34,14 @@ const LoanDetails = ({ loanProduct, showProductName=false }: Props) => {
           alt={bankName + " logo"}
           className="  h-20 mx-auto mb-4 object-fill"
         />
+      </div>
+      <div>
+        <h4 className="text-lg mb-2 text-slate-700 font-semibold text-center">
+          {contact}
+        </h4>
+        <h4 className="text-lg mb-2 text-slate-700 font-semibold text-center">
+          {location}
+        </h4>
       </div>
       <div className="p-4 m-2">
         <p className="mb-2 text-sm ">
@@ -85,7 +96,9 @@ const LoanDetails = ({ loanProduct, showProductName=false }: Props) => {
           <h4 className=" font-semibold text-slate-400">Requirements</h4>
           <ul className="list-disc">
             {eligibilityRequirements.map((item, index) => (
-              <li key={index} className="text-sm ml-4">{item}</li>
+              <li key={index} className="text-sm ml-4">
+                {item}
+              </li>
             ))}
           </ul>
         </div>
@@ -93,7 +106,9 @@ const LoanDetails = ({ loanProduct, showProductName=false }: Props) => {
           <h4 className=" font-semibold text-slate-400">Collateral Options</h4>
           <ul className="list-disc">
             {collateralRequired.map((item, index) => (
-              <li key={index} className="text-sm ml-4">{item}</li>
+              <li key={index} className="text-sm ml-4">
+                {item}
+              </li>
             ))}
           </ul>
         </div>

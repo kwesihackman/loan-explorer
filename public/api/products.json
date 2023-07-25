@@ -26,7 +26,8 @@
         "Machinery"
       ],
       "loanDisbursementTime": "Within 48 hours",
-      "customerServiceRating": 4
+      "contact": "+233 24 433 4222",
+      "location": "1211 Zongo junction"
     },
     {
       "id":"f2zUYS4AZpI5PBQla8nSa",
@@ -54,7 +55,8 @@
         "Machinery"
       ],
       "loanDisbursementTime": "Within 1 week",
-      "customerServiceRating": 4
+      "contact": "+233 24 433 4242",
+      "location": "19 Banana Ave"
     },
     {
       "id":"f2zUNS2AZpI5PBQla8nSa",
@@ -82,7 +84,8 @@
         "Machinery"
       ],
       "loanDisbursementTime": "Within 1 week",
-      "customerServiceRating": 4
+      "contact": "+233 24 433 4322",
+      "location": "20 AC Mall Road"
     },
     {
       "id":"f2zUYS9AZmI5PBQla8nSa",
@@ -111,7 +114,8 @@
         "Farm"
       ],
       "loanDisbursementTime": "Within 96 hours",
-      "customerServiceRating": 4
+      "contact": "+233 0545039547",
+      "location": "19 Banana Street, East Legon"
     },
     {
       "id":"f2zUYS7AZpI5PBQla8nSa",
@@ -139,7 +143,8 @@
         "Machinery"
       ],
       "loanDisbursementTime": "Within 1 week",
-      "customerServiceRating": 4
+       "contact": "+233 24 433 4242",
+      "location": "19 Banana Ave"
     },
     {
       "id":"f2zUNS8AZp85PBQla8nSa",
@@ -168,7 +173,8 @@
         "House"
       ],
       "loanDisbursementTime": "Within 2 weeks",
-      "customerServiceRating": 4
+      "contact": "+233 0545039547",
+      "location": "19 Banana Street, East Legon"
     },
     {
       "id":"f2zUYS0AZmI5P4Qla8nSa",
@@ -196,7 +202,8 @@
         "Machinery"
       ],
       "loanDisbursementTime": "Within 96 hours",
-      "customerServiceRating": 4
+      "contact": "+233 0545039547",
+      "location": "19 Banana Street, East Legon"
     },
     {
       "id":"f2zUYS4AZpI5PBPla8nSa",
@@ -224,7 +231,8 @@
         "Machinery"
       ],
       "loanDisbursementTime": "Within 1 week",
-      "customerServiceRating": 4
+      "contact": "+233 24 433 4242",
+      "location": "15 Pawpaw Ave"
     },
     {
       "id":"f2zUNS2AZpT5VBQla8nSa",
@@ -252,7 +260,8 @@
         "Machinery"
       ],
       "loanDisbursementTime": "Within 1 week",
-      "customerServiceRating": 4
+      "contact": "+233 0545939547",
+      "location": "33 Mango Street, East Legon"
     },
     {
       "id":"f2zUYS9AZ9I5PBQla8nSa",
@@ -281,7 +290,8 @@
         "Farm"
       ],
       "loanDisbursementTime": "Within 96 hours",
-      "customerServiceRating": 4
+      "contact": "+233 551343000",
+      "location": "FB21 New Legon Road"
     },
     {
       "id":"f2zUYS7HZp45PBQla8nSa",
@@ -309,7 +319,8 @@
         "Machinery"
       ],
       "loanDisbursementTime": "Within 1 week",
-      "customerServiceRating": 4
+      "contact": "+233 0545039549",
+      "location": "212 Legon Ave"
     },
     {
       "id":"f2zUNS80Z0I5PBQla8nSa",
@@ -338,7 +349,8 @@
         "House"
       ],
       "loanDisbursementTime": "Within 1 week",
-      "customerServiceRating": 4
+      "contact": "+233 545039548",
+      "location": "40 Lagos Avenue"
     }
   ]
 }
