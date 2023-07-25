@@ -4,13 +4,15 @@ import Label from './label';
 
 type Props = {
   loanProduct: ILoanProduct;
+  showProductName?:boolean;
 };
 
-const LoanDetails = ({ loanProduct }: Props) => {
+const LoanDetails = ({ loanProduct, showProductName=false }: Props) => {
   const {
     logo,
     loanAmountRange,
     bankName,
+    loanProductName,
     interestRate,
     loanTerm,
     downPayment,
@@ -19,6 +21,7 @@ const LoanDetails = ({ loanProduct }: Props) => {
     collateralRequired,
     loanDisbursementTime,
     monthlyPayment,
+    apr
   } = loanProduct;
   return (
     <div className="">
@@ -34,6 +37,12 @@ const LoanDetails = ({ loanProduct }: Props) => {
           <Label label="Bank" />
           {bankName}
         </p>
+        {showProductName && (
+          <p className="mb-2 text-sm ">
+            <Label label="Product name" />
+            {loanProductName}
+          </p>
+        )}
 
         <p className="text-sm mb-2">
           <Label label="Loan Amount" />
@@ -47,14 +56,21 @@ const LoanDetails = ({ loanProduct }: Props) => {
           <Label label="Monthly payment" />
           {`GHS ${monthlyPayment}`}
         </p>
-        <p className="mb-2 text-sm ">
-          <Label label="Fees" />
-          {`GHS ${fees.originationFee}`}
-        </p>
+
         <div className=" flex flex-row space-x-7 ">
           <p className="mb-2 text-sm ">
             <Label label="Interest Rate" />
             {interestRate}%
+          </p>
+          <p className="mb-2 text-sm ">
+            <Label label="APR" />
+            {apr}%
+          </p>
+        </div>
+        <div className=" flex flex-row space-x-7 ">
+          <p className="mb-2 text-sm ">
+            <Label label="Fees" />
+            {`GHS ${fees.originationFee}`}
           </p>
           <p className="mb-2 text-sm ">
             <Label label="Loan Term" />

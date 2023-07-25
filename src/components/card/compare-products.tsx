@@ -14,11 +14,11 @@ const CompareProducts: FC<CompareProductsProps> = ({
   return (
     <div className="flex justify-around p-4">
       <div className="w-1/2 p-2 border rounded">
-        <LoanDetails loanProduct={loanProductLeft} />
+        <LoanDetails loanProduct={loanProductLeft} showProductName={true} />
       </div>
 
       <div className="w-1/2 p-2 border rounded">
-        <LoanDetails loanProduct={loanProductRight} />
+        <LoanDetails loanProduct={loanProductRight} showProductName={true} />
       </div>
     </div>
   );

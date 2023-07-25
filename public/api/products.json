@@ -29,21 +29,21 @@
       "customerServiceRating": 4
     },
     {
-      "id":"f2zUYS0AZpI5PBQla8nSa",
+      "id":"f2zUYS4AZpI5PBQla8nSa",
       "bankName": "Access Bank Ghana Plc",
       "loanProductName": "Farmers Loan Advance",
       "logo": "/images/access.png",
-      "interestRate": 4.5,
-      "apr": 6.65,
+      "interestRate": 3.5,
+      "apr": 5.8,
       "loanTerm": 60,
-      "monthlyPayment": 750,
-      "downPayment": 3000,
+      "monthlyPayment": 650,
+      "downPayment": 4000,
       "fees": {
-        "originationFee": 70
+        "originationFee": 150
       },
       "loanAmountRange": {
-        "min": 8000,
-        "max": 50000
+        "min": 3000,
+        "max": 30000
       },
       "eligibilityRequirements": [
         "Minimum income of GHS 3900 per month",
@@ -57,7 +57,7 @@
       "customerServiceRating": 4
     },
     {
-      "id":"f2zUNS0AZpI5PBQla8nSa",
+      "id":"f2zUNS2AZpI5PBQla8nSa",
       "bankName": "Ecobank Ghana Plc",
       "loanProductName": "AltFarmers Loan",
       "logo": "/images/ecobank.png",
@@ -85,15 +85,15 @@
       "customerServiceRating": 4
     },
     {
-      "id":"f2zUYS0AZmI5PBQla8nSa",
-      "bankName": "Absa Bank Ghana Limited",
-      "loanProductName": "Agri Loan Premium",
-      "logo": "/images/absa.png",
+      "id":"f2zUYS9AZmI5PBQla8nSa",
+      "bankName": "Standard Bank Limited",
+      "loanProductName": "Standard Akuafo Loan",
+      "logo": "/images/standard.png",
       "interestRate": 6.5,
       "apr": 6.75,
       "loanTerm": 60,
       "monthlyPayment": 550,
-      "downPayment": 2000,
+      "downPayment": 4000,
       "fees": {
         "originationFee": 60
       },
@@ -107,27 +107,113 @@
       ],
       "collateralRequired": [
         "Land",
-        "Machinery"
+        "Machinery",
+        "Farm"
       ],
-      "loanDisbursementTime": "Within 48 hours",
+      "loanDisbursementTime": "Within 96 hours",
       "customerServiceRating": 4
     },
     {
-      "id":"f2zUYS0AZpI5PBQla8nSa",
+      "id":"f2zUYS7AZpI5PBQla8nSa",
       "bankName": "Access Bank Ghana Plc",
-      "loanProductName": "Farmers Loan Advance",
+      "loanProductName": "Agypa Pa Loan",
       "logo": "/images/access.png",
-      "interestRate": 4.5,
-      "apr": 6.65,
-      "loanTerm": 60,
-      "monthlyPayment": 750,
-      "downPayment": 3000,
+      "interestRate": 6.5,
+      "apr": 8.90,
+      "loanTerm": 48,
+      "monthlyPayment": 400,
+      "downPayment": 12000,
       "fees": {
-        "originationFee": 70
+        "originationFee":600
       },
       "loanAmountRange": {
-        "min": 8000,
+        "min": 11000,
         "max": 50000
+      },
+      "eligibilityRequirements": [
+        "Minimum income of GHS 400 per month",
+        "Credit score above 520"
+      ],
+      "collateralRequired": [
+        "Land",
+        "Machinery"
+      ],
+      "loanDisbursementTime": "Within 1 week",
+      "customerServiceRating": 4
+    },
+    {
+      "id":"f2zUNS8AZp85PBQla8nSa",
+      "bankName": "FNB Ghana Ltd",
+      "loanProductName": "Eazy Loan",
+      "logo": "/images/fnb.png",
+      "interestRate": 5.5,
+      "apr": 8.65,
+      "loanTerm": 60,
+      "monthlyPayment": 900,
+      "downPayment": 5000,
+      "fees": {
+        "originationFee": 450
+      },
+      "loanAmountRange": {
+        "min": 15000,
+        "max": 50000
+      },
+      "eligibilityRequirements": [
+        "Minimum income of GHS 1900 per month",
+        "Credit score above 650"
+      ],
+      "collateralRequired": [
+        "Farm",
+        "Machinery",
+        "House"
+      ],
+      "loanDisbursementTime": "Within 2 weeks",
+      "customerServiceRating": 4
+    },
+    {
+      "id":"f2zUYS0AZmI5P4Qla8nSa",
+      "bankName": "Fidelity Bank Gh",
+      "loanProductName": "Agri Loan Premium",
+      "logo": "/images/fidelity.jpeg",
+      "interestRate": 5.5,
+      "apr": 4.75,
+      "loanTerm": 72,
+      "monthlyPayment": 350,
+      "downPayment": 1500,
+      "fees": {
+        "originationFee": 190
+      },
+      "loanAmountRange": {
+        "min": 4500,
+        "max": 50000
+      },
+      "eligibilityRequirements": [
+        "Minimum income of GHS 2000 per month",
+        "Credit score above 450"
+      ],
+      "collateralRequired": [
+        "Land",
+        "Machinery"
+      ],
+      "loanDisbursementTime": "Within 96 hours",
+      "customerServiceRating": 4
+    },
+    {
+      "id":"f2zUYS4AZpI5PBPla8nSa",
+      "bankName": "Access Bank Ghana Plc",
+      "loanProductName": "Too Qwik Loan",
+      "logo": "/images/access.png",
+      "interestRate": 4.5,
+      "apr": 4.8,
+      "loanTerm": 72,
+      "monthlyPayment": 350,
+      "downPayment": 2000,
+      "fees": {
+        "originationFee": 450
+      },
+      "loanAmountRange": {
+        "min": 2000,
+        "max": 25000
       },
       "eligibilityRequirements": [
         "Minimum income of GHS 3900 per month",
@@ -141,21 +227,21 @@
       "customerServiceRating": 4
     },
     {
-      "id":"f2zUNS0AZpI5PBQla8nSa",
-      "bankName": "Ecobank Ghana Plc",
-      "loanProductName": "AltFarmers Loan",
-      "logo": "/images/ecobank.png",
-      "interestRate": 4.5,
-      "apr": 6.65,
-      "loanTerm": 60,
-      "monthlyPayment": 750,
-      "downPayment": 3000,
+      "id":"f2zUNS2AZpT5VBQla8nSa",
+      "bankName": "ADB Ghana Ltd",
+      "loanProductName": "ADB Plus Loan",
+      "logo": "/images/adb.png",
+      "interestRate": 5.5,
+      "apr": 4.65,
+      "loanTerm": 96,
+      "monthlyPayment": 450,
+      "downPayment": 2000,
       "fees": {
-        "originationFee": 70
+        "originationFee": 390
       },
       "loanAmountRange": {
-        "min": 8000,
-        "max": 50000
+        "min": 6000,
+        "max": 40000
       },
       "eligibilityRequirements": [
         "Minimum income of GHS 3900 per month",
@@ -164,6 +250,92 @@
       "collateralRequired": [
         "Land",
         "Machinery"
+      ],
+      "loanDisbursementTime": "Within 1 week",
+      "customerServiceRating": 4
+    },
+    {
+      "id":"f2zUYS9AZ9I5PBQla8nSa",
+      "bankName": "Standard Bank Limited",
+      "loanProductName": "Standard Akuafo Loan",
+      "logo": "/images/standard.png",
+      "interestRate": 6.5,
+      "apr": 6.75,
+      "loanTerm": 60,
+      "monthlyPayment": 550,
+      "downPayment": 4000,
+      "fees": {
+        "originationFee": 60
+      },
+      "loanAmountRange": {
+        "min": 6000,
+        "max": 60000
+      },
+      "eligibilityRequirements": [
+        "Minimum income of GHS 3000 per month",
+        "Credit score above 650"
+      ],
+      "collateralRequired": [
+        "Land",
+        "Machinery",
+        "Farm"
+      ],
+      "loanDisbursementTime": "Within 96 hours",
+      "customerServiceRating": 4
+    },
+    {
+      "id":"f2zUYS7HZp45PBQla8nSa",
+      "bankName": "GCB Plc",
+      "loanProductName": "GCG Akuafo Loan",
+      "logo": "/images/gcb.jpeg",
+      "interestRate": 7.5,
+      "apr": 6.90,
+      "loanTerm": 96,
+      "monthlyPayment": 300,
+      "downPayment": 11000,
+      "fees": {
+        "originationFee":500
+      },
+      "loanAmountRange": {
+        "min": 11500,
+        "max": 50000
+      },
+      "eligibilityRequirements": [
+        "Minimum income of GHS 450 per month",
+        "Credit score above 420"
+      ],
+      "collateralRequired": [
+        "Land",
+        "Machinery"
+      ],
+      "loanDisbursementTime": "Within 1 week",
+      "customerServiceRating": 4
+    },
+    {
+      "id":"f2zUNS80Z0I5PBQla8nSa",
+      "bankName": "Zenith Ghana Ltd",
+      "loanProductName": "Z Qwik Loan",
+      "logo": "/images/zenith.png",
+      "interestRate": 4.5,
+      "apr": 6.65,
+      "loanTerm": 48,
+      "monthlyPayment": 1800,
+      "downPayment": 6000,
+      "fees": {
+        "originationFee": 650
+      },
+      "loanAmountRange": {
+        "min": 25000,
+        "max": 60000
+      },
+      "eligibilityRequirements": [
+        "Minimum income of GHS 1800 per month",
+        "Credit score above 550"
+      ],
+      "collateralRequired": [
+        "Farm",
+        "Machinery",
+        "House"
       ],
       "loanDisbursementTime": "Within 1 week",
       "customerServiceRating": 4

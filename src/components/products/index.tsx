@@ -15,12 +15,12 @@ import LoanAnalysis from "@components/card/loan-analysis";
 
 interface ProductListProps {
   loanProducts: ILoanProduct[];
+  searchTerm:string;
 }
 
-const ProductList: FC<ProductListProps> = ({ loanProducts }) => {
-    const { isOpen, onClose, onOpen } = useDisclosure();
+const ProductList: FC<ProductListProps> = ({ loanProducts, searchTerm }) => {
    const [selectedProducts, setSelectedProducts] = useState<ILoanProduct[]>([]);
-
+  const lowerCaseSearchTerm = searchTerm.toLowerCase();
    const handleSelectProduct = (product: ILoanProduct) => {
      if (selectedProducts.length < 2) {
        setSelectedProducts([...selectedProducts, product]);
@@ -36,10 +36,20 @@ const ProductList: FC<ProductListProps> = ({ loanProducts }) => {
        selectedProducts.filter((product) => product.id !== productId)
      );
    };
+
+   const filteredProducts = loanProducts.filter(
+     (product) =>
+       product.loanProductName.toLowerCase().includes(lowerCaseSearchTerm) ||
+       product.bankName.toLowerCase().includes(lowerCaseSearchTerm)
+   );
+
   return (
     <div>
+      <p className="text-slate-300 text-xl mb-4">
+        Select Two products to compare
+      </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 gap-y-8">
-        {loanProducts.map((loanProduct) => (
+        {filteredProducts.map((loanProduct) => (
           <BankCard
             key={loanProduct.id}
             loanProduct={loanProduct}
