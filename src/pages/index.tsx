@@ -3,10 +3,22 @@ import Hero from "@components/hero";
 import ProductList from "@components/products";
 import SearchBox from "@components/search";
 import { Fragment } from "react";
+import { useLoanProductsQuery } from "src/hooks/useFetchProducts";
 import { sampleLoanProducts } from "src/utils/Data";
 
 
 export default function Page() {
+ const {data, isLoading, error} = useLoanProductsQuery()
+ if(isLoading) {
+    return <div>Loading...</div>
+ }
+
+ if(error) {
+    return <div>{`Error Loading loan products`}</div>
+ }
+
+ console.log({data})
+
   return (
     <div className="bg-sky-950">
       <Hero
@@ -16,7 +28,7 @@ export default function Page() {
       />
       <SearchBox />
       <div className="container bg- mx-auto mt-8 pb-10">
-        <ProductList loanProducts={sampleLoanProducts} />
+        <ProductList loanProducts={data!} />
       </div>
     </div>
   );

@@ -26,7 +26,7 @@ const Layout = ({ children }: React.PropsWithChildren<{}>) => {
       >
         {children}
       </main>
-      <Footer />
+      <Footer/>
     </div>
   );
 };
