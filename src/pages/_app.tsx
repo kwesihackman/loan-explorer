@@ -2,6 +2,7 @@ import { useRef } from "react";
 import type { AppProps } from "next/app";
 import { AnimatePresence } from "framer-motion";
 import { QueryClient, QueryClientProvider } from "react-query";
+import { ChakraProvider } from "@chakra-ui/react";
 import Layout from "@components/layout/layout";
 import "../styles/globals.css";
 
@@ -24,9 +25,11 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <AnimatePresence mode="wait" onExitComplete={handleExitComplete}>
       <QueryClientProvider client={queryClientRef.current}>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+        <ChakraProvider>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </ChakraProvider>
       </QueryClientProvider>
     </AnimatePresence>
   );

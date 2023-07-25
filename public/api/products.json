@@ -4,7 +4,7 @@
       "id":"f2zUYS0AZmI5PBQla8nSa",
       "bankName": "Absa Bank Ghana Limited",
       "loanProductName": "Agri Loan Premium",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/d/de/ABSA_Group_Limited_Logo.svg",
+      "logo": "/images/absa.png",
       "interestRate": 6.5,
       "apr": 6.75,
       "loanTerm": 60,
@@ -26,6 +26,146 @@
         "Machinery"
       ],
       "loanDisbursementTime": "Within 48 hours",
+      "customerServiceRating": 4
+    },
+    {
+      "id":"f2zUYS0AZpI5PBQla8nSa",
+      "bankName": "Access Bank Ghana Plc",
+      "loanProductName": "Farmers Loan Advance",
+      "logo": "/images/access.png",
+      "interestRate": 4.5,
+      "apr": 6.65,
+      "loanTerm": 60,
+      "monthlyPayment": 750,
+      "downPayment": 3000,
+      "fees": {
+        "originationFee": 70
+      },
+      "loanAmountRange": {
+        "min": 8000,
+        "max": 50000
+      },
+      "eligibilityRequirements": [
+        "Minimum income of GHS 3900 per month",
+        "Credit score above 450"
+      ],
+      "collateralRequired": [
+        "Land",
+        "Machinery"
+      ],
+      "loanDisbursementTime": "Within 1 week",
+      "customerServiceRating": 4
+    },
+    {
+      "id":"f2zUNS0AZpI5PBQla8nSa",
+      "bankName": "Ecobank Ghana Plc",
+      "loanProductName": "AltFarmers Loan",
+      "logo": "/images/ecobank.png",
+      "interestRate": 4.5,
+      "apr": 6.65,
+      "loanTerm": 60,
+      "monthlyPayment": 750,
+      "downPayment": 3000,
+      "fees": {
+        "originationFee": 70
+      },
+      "loanAmountRange": {
+        "min": 8000,
+        "max": 50000
+      },
+      "eligibilityRequirements": [
+        "Minimum income of GHS 3900 per month",
+        "Credit score above 450"
+      ],
+      "collateralRequired": [
+        "Land",
+        "Machinery"
+      ],
+      "loanDisbursementTime": "Within 1 week",
+      "customerServiceRating": 4
+    },
+    {
+      "id":"f2zUYS0AZmI5PBQla8nSa",
+      "bankName": "Absa Bank Ghana Limited",
+      "loanProductName": "Agri Loan Premium",
+      "logo": "/images/absa.png",
+      "interestRate": 6.5,
+      "apr": 6.75,
+      "loanTerm": 60,
+      "monthlyPayment": 550,
+      "downPayment": 2000,
+      "fees": {
+        "originationFee": 60
+      },
+      "loanAmountRange": {
+        "min": 6000,
+        "max": 60000
+      },
+      "eligibilityRequirements": [
+        "Minimum income of GHS 3000 per month",
+        "Credit score above 650"
+      ],
+      "collateralRequired": [
+        "Land",
+        "Machinery"
+      ],
+      "loanDisbursementTime": "Within 48 hours",
+      "customerServiceRating": 4
+    },
+    {
+      "id":"f2zUYS0AZpI5PBQla8nSa",
+      "bankName": "Access Bank Ghana Plc",
+      "loanProductName": "Farmers Loan Advance",
+      "logo": "/images/access.png",
+      "interestRate": 4.5,
+      "apr": 6.65,
+      "loanTerm": 60,
+      "monthlyPayment": 750,
+      "downPayment": 3000,
+      "fees": {
+        "originationFee": 70
+      },
+      "loanAmountRange": {
+        "min": 8000,
+        "max": 50000
+      },
+      "eligibilityRequirements": [
+        "Minimum income of GHS 3900 per month",
+        "Credit score above 450"
+      ],
+      "collateralRequired": [
+        "Land",
+        "Machinery"
+      ],
+      "loanDisbursementTime": "Within 1 week",
+      "customerServiceRating": 4
+    },
+    {
+      "id":"f2zUNS0AZpI5PBQla8nSa",
+      "bankName": "Ecobank Ghana Plc",
+      "loanProductName": "AltFarmers Loan",
+      "logo": "/images/ecobank.png",
+      "interestRate": 4.5,
+      "apr": 6.65,
+      "loanTerm": 60,
+      "monthlyPayment": 750,
+      "downPayment": 3000,
+      "fees": {
+        "originationFee": 70
+      },
+      "loanAmountRange": {
+        "min": 8000,
+        "max": 50000
+      },
+      "eligibilityRequirements": [
+        "Minimum income of GHS 3900 per month",
+        "Credit score above 450"
+      ],
+      "collateralRequired": [
+        "Land",
+        "Machinery"
+      ],
+      "loanDisbursementTime": "Within 1 week",
       "customerServiceRating": 4
     }
   ]

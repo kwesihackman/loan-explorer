@@ -8,7 +8,7 @@ interface ProductListProps {
 
 const ProductList: FC<ProductListProps> = ({ loanProducts }) => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 gap-y-8">
       {loanProducts.map((loanProduct) => (
         <BankCard key={loanProduct.id} loanProduct={loanProduct} />
       ))}

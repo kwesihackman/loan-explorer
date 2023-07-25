@@ -17,8 +17,6 @@ export default function Page() {
     return <div>{`Error Loading loan products`}</div>
  }
 
- console.log({data})
-
   return (
     <div className="bg-sky-950">
       <Hero
@@ -27,7 +25,7 @@ export default function Page() {
         ctaText="Get Started"
       />
       <SearchBox />
-      <div className="container bg- mx-auto mt-8 pb-10">
+      <div className="container bg- mx-auto mt-20 pb-10">
         <ProductList loanProducts={data!} />
       </div>
     </div>
